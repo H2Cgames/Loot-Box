@@ -1,0 +1,25 @@
+# loot box 1 v pythonu
+
+
+import time
+import random
+
+d = random.randint(0,3)
+
+if str (input("Chceš si koupit loot box?:")) == "Ano":
+    if str (input("Potvtďte že zaplacujete 69.90Kč (napište:Potvrdit)")) == "Potvrdit":
+        for i in range(10,0,-1):
+            print(i)
+            time.sleep(0.5)
+        if d == 0:
+            print("Nic nemáš :( Příště to snad výjde")
+        elif d == 1:
+            print("Získal jsi vzácný předmět :) HURÁ!!")
+        elif d == 2:
+            print("Získal jsi epický předmět :) HURÁ!!")
+        elif d == 3:
+            print("ZÍSKAL JSI LEGENDÁRNÍ PŘEDMĚT")
+    else:
+        print("Nákup byl zrušen")
+else:
+    print("Nákup byl zrušen")
